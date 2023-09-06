@@ -31,7 +31,7 @@ jobs:
         username: ${{ secrets.SERVER_USERNAME }}
         password: ${{ secrets.SERVER_PASSWORD }}
         script: |
-          cd /mnt/sdb/EngBot/Mnemonics/deploy-azure-sql-edge   # Change directory
+          cd /mnt/sdb/Mnemonics/deploy/deploy-azure-sql-edge   # Change directory
           docker compose down  
           docker compose up -d     
                   
