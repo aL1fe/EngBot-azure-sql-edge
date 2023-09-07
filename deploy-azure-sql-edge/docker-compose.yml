@@ -4,7 +4,7 @@ services:
   azure-sql-server:
     container_name: mnemonics-sql-db
     image: "mcr.microsoft.com/azure-sql-edge"
-    restart: always
+    restart: unless-stopped
     ports:
       - "1455:1433"
     environment:
